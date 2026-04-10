@@ -170,6 +170,26 @@
             letter-spacing: 1px;
         }
 
+        .cve-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cve-list li {
+            padding: 10px 16px;
+            border-bottom: 1px solid #111118;
+            font-size: 0.85rem;
+        }
+
+        .cve-list li a {
+            color: #00ff41;
+            text-decoration: none;
+        }
+
+        .cve-list li a:hover {
+            text-decoration: underline;
+        }
+
         .pr-link {
             color: #58a6ff;
             text-decoration: none;
@@ -220,14 +240,18 @@
                 <div class="number">3</div>
                 <div class="label">Projects Secured</div>
             </div>
-            <div class="stat-card">
-                <div class="number">2</div>
-                <div class="label">Fix PRs Merged</div>
-            </div>
         </div>
 
         <div class="section">
-            <h2>CVE Disclosures</h2>
+            <h2>Assigned CVEs</h2>
+            <ul class="cve-list">
+                <!-- <li><a class="pr-link" href="https://nvd.nist.gov/vuln/detail/CVE-XXXX-XXXXX">CVE-XXXX-XXXXX</a> — Description</li> -->
+                <li style="color: #6e7681;">Pending assignment...</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Disclosures</h2>
             <table class="cve-table">
                 <thead>
                     <tr>
